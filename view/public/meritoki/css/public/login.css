@@ -1,0 +1,99 @@
+/*
+ * login.css
+ * Date 2015-10-21
+ */
+
+.message {
+    color: red;
+}
+
+.login-form li {
+    padding: 0;
+    display: block;
+    list-style: none;
+    margin: 10px 0 0 0;
+}
+
+.login-form label {
+    margin: 0 0 3px 0;
+    padding: 0px;
+    display: block;
+    font-weight: bold;
+}
+
+.login-form input[type=text],
+.login-form input[type=password],
+.login-form input[type=date],
+.login-form input[type=datetime],
+.login-form input[type=number],
+.login-form input[type=search],
+.login-form input[type=time],
+.login-form input[type=url],
+.login-form input[type=email],
+textarea,
+select {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: 1px solid #BEBEBE;
+    padding: 7px;
+    margin: 0px;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+}
+
+.login-form input[type=text]:focus,
+.login-form input[type=password]:focus,
+.login-form input[type=date]:focus,
+.login-form input[type=datetime]:focus,
+.login-form input[type=number]:focus,
+.login-form input[type=search]:focus,
+.login-form input[type=time]:focus,
+.login-form input[type=url]:focus,
+.login-form input[type=email]:focus,
+.login-form textarea:focus,
+.login-form select:focus {
+    -moz-box-shadow: 0 0 8px rgba(234, 189, 42, 0.8);
+    -webkit-box-shadow: 0 0 8px rgba(234, 189, 42, 0.8);
+    box-shadow: 0 0 8px rgba(234, 189, 42, 0.8);
+    border: 1px solid rgba(234, 189, 42, 0.8);
+}
+
+.login-form .field-divided {
+    width: 49%;
+}
+
+.login-form .field-long {
+    width: 100%;
+}
+
+.login-form .field-select {
+    width: 100%;
+}
+
+.login-form .field-textarea {
+    height: 100px;
+}
+
+.login-form input[type=submit],
+.login-form input[type=button] {
+    background: #02277b;
+    padding: 8px 15px 8px 15px;
+    border: none;
+    color: #fff;
+}
+
+.login-form input[type=submit]:hover,
+.login-form input[type=button]:hover {
+    background: #02277b;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.login-form .required {
+    color: red;
+}

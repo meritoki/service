@@ -1,0 +1,3264 @@
+Warning: Using a password on the command line interface can be insecure.
+--------------
+SET @idElement=305
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+SET @idAccount=1
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="dependability"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=306
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="judgement"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=309
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="cooperation"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=310
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="initiative"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=326
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="knowledgeSkills"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=311
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="motivation"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=312
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="receptivity"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=320
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="constructiveness"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=321
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="independence"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=322
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="versatility"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=323
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="safetyAwareness"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=313
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="preparedness"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=324
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="performance"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=325
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="qualityOfWork"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+Bye
+Warning: Using a password on the command line interface can be insecure.
+--------------
+SET @idElement=305
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+SET @idAccount=1
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="dependability"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=306
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="judgement"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=309
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="cooperation"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=310
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="initiative"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=326
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="knowledgeSkills"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=311
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="motivation"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=312
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="receptivity"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=320
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="constructiveness"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=321
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="independence"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=322
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="versatility"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=323
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="safetyAwareness"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=313
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="preparedness"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=324
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="performance"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=325
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="qualityOfWork"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+Bye
+Warning: Using a password on the command line interface can be insecure.
+--------------
+SET @idElement=305
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+SET @idAccount=1
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="dependability"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=306
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="judgement"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=309
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="cooperation"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=310
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="initiative"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=326
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="knowledgeSkills"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=311
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="motivation"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=312
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="receptivity"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=320
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="constructiveness"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=321
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="independence"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=322
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="versatility"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=323
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="safetyAwareness"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=313
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="preparedness"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=324
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="performance"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=325
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="qualityOfWork"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+Bye
+Warning: Using a password on the command line interface can be insecure.
+--------------
+SET @idElement=305
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+SET @idAccount=1
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="dependability"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=306
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="judgement"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=309
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="cooperation"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=310
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="initiative"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=326
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="knowledgeSkills"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=311
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="motivation"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=312
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="receptivity"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=320
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="constructiveness"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=321
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="independence"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=322
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="versatility"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=323
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="safetyAwareness"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=313
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="preparedness"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=324
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="performance"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=325
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="qualityOfWork"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+Bye
+Warning: Using a password on the command line interface can be insecure.
+--------------
+SET @idElement=305
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+SET @idAccount=1
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="dependability"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=306
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="judgement"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=309
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="cooperation"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=310
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="initiative"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=326
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="knowledgeSkills"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=311
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="motivation"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=312
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="receptivity"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=320
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="constructiveness"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=321
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="independence"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=322
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="versatility"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=323
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="safetyAwareness"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=313
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="preparedness"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=324
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="performance"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=325
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="qualityOfWork"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+Bye
+Warning: Using a password on the command line interface can be insecure.
+--------------
+SET @idElement=305
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+SET @idAccount=1
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="dependability"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=306
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="judgement"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=309
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="cooperation"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=310
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="initiative"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=326
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="knowledgeSkills"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=311
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="motivation"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=312
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="receptivity"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=320
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="constructiveness"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=321
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="independence"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=322
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="versatility"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=323
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="safetyAwareness"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=313
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="preparedness"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=324
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="performance"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=325
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="qualityOfWork"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+Bye
+Warning: Using a password on the command line interface can be insecure.
+--------------
+SET @idElement=305
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+SET @idAccount=1
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="dependability"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=306
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="judgement"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=309
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="cooperation"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=310
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="initiative"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=326
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="knowledgeSkills"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=311
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="motivation"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=312
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="receptivity"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=320
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="constructiveness"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=321
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="independence"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=322
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="versatility"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=323
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="safetyAwareness"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=313
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="preparedness"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=324
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="performance"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=325
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="qualityOfWork"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+Bye
+Warning: Using a password on the command line interface can be insecure.
+--------------
+SET @idElement=305
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+SET @idAccount=1
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="dependability"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=306
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="judgement"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=309
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="cooperation"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=310
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="initiative"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=326
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="knowledgeSkills"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=311
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="motivation"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=312
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="receptivity"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=320
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="constructiveness"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=321
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="independence"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=322
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="versatility"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=323
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="safetyAwareness"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=313
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="preparedness"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=324
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="performance"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=325
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="qualityOfWork"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+Bye
+Warning: Using a password on the command line interface can be insecure.
+--------------
+SET @idElement=305
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+SET @idAccount=1
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="dependability"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=306
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="judgement"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=309
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="cooperation"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=310
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="initiative"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=326
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="knowledgeSkills"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=311
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="motivation"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=312
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="receptivity"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=320
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="constructiveness"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=321
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="independence"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=322
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="versatility"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=323
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="safetyAwareness"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=313
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="preparedness"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=324
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="performance"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=325
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="qualityOfWork"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+Bye
+Warning: Using a password on the command line interface can be insecure.
+--------------
+SET @idElement=305
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+SET @idAccount=1
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="dependability"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=306
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="judgement"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=309
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="cooperation"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=310
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="initiative"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=326
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="knowledgeSkills"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=311
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="motivation"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=312
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="receptivity"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=320
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="constructiveness"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=321
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="independence"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=322
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="versatility"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=323
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="safetyAwareness"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=313
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="preparedness"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=324
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="performance"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=325
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="qualityOfWork"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+Bye
+Warning: Using a password on the command line interface can be insecure.
+--------------
+SET @idElement=305
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+SET @idAccount=1
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="dependability"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=306
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="judgement"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=309
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="cooperation"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=310
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="initiative"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=326
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="knowledgeSkills"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=311
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="motivation"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=312
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="receptivity"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=320
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="constructiveness"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=321
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="independence"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=322
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="versatility"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=323
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="safetyAwareness"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=313
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="preparedness"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=324
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="performance"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=325
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="qualityOfWork"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+Bye
+Warning: Using a password on the command line interface can be insecure.
+--------------
+SET @idElement=305
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+SET @idAccount=1
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="dependability"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=306
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="judgement"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=309
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="cooperation"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=310
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="initiative"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=326
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="knowledgeSkills"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=311
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="motivation"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=312
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="receptivity"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=320
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="constructiveness"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=321
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="independence"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=322
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="versatility"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=323
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="safetyAwareness"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=313
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="preparedness"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=324
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="performance"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=325
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="qualityOfWork"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+Bye
+Warning: Using a password on the command line interface can be insecure.
+--------------
+SET @idElement=305
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+SET @idAccount=1
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="dependability"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=306
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="judgement"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=309
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="cooperation"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=310
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="initiative"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=326
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="knowledgeSkills"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=311
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="motivation"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=312
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="receptivity"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=320
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="constructiveness"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=321
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="independence"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=322
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="versatility"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=323
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="safetyAwareness"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=313
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="preparedness"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=324
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="performance"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=325
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="qualityOfWork"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+Bye
+Warning: Using a password on the command line interface can be insecure.
+--------------
+SET @idElement=305
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+SET @idAccount=1
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="dependability"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=306
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="judgement"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=309
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="cooperation"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=310
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="initiative"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=326
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="knowledgeSkills"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=311
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="motivation"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=312
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="receptivity"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=320
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="constructiveness"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=321
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="independence"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=322
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="versatility"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=323
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="safetyAwareness"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=313
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="preparedness"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=324
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="performance"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=325
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="qualityOfWork"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+Bye
+Warning: Using a password on the command line interface can be insecure.
+--------------
+SET @idElement=305
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+SET @idAccount=1
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="dependability"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=306
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="judgement"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=309
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="cooperation"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=310
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="initiative"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=326
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="knowledgeSkills"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=311
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="motivation"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=312
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="receptivity"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=320
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="constructiveness"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=321
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="independence"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=322
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="versatility"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=323
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="safetyAwareness"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=313
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="preparedness"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=324
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="performance"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=325
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="qualityOfWork"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+Bye
+Warning: Using a password on the command line interface can be insecure.
+--------------
+SET @idElement=305
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+SET @idAccount=1
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="dependability"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=306
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="judgement"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=309
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="cooperation"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=310
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="initiative"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=326
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="knowledgeSkills"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=311
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="motivation"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=312
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="receptivity"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=320
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="constructiveness"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=321
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="independence"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=322
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="versatility"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=323
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="safetyAwareness"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=313
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="preparedness"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=324
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="performance"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+--------------
+SET @idElement=325
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+INSERT INTO `management`.`InstructionElement` (idAccount,idInstruction,idElement)
+SELECT @idAccount, i.idInstruction, @idElement FROM `management`.Instruction i INNER JOIN `management`.Proc p ON p.idProcedure=i.idProcedure WHERE p.name LIKE "Employee Evaluation%" AND i.name="qualityOfWork"
+--------------
+
+Query OK, 262 rows affected
+Records: 262  Duplicates: 0  Warnings: 0
+
+Bye

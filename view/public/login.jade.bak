@@ -1,0 +1,17 @@
+extends ../theme
+block append head-link
+    link(rel='stylesheet', href='/meritbuilders/css/public/login.css')
+block content
+    .content-wrapper
+        form(class="login-form", action="#{action}", method="POST")
+            h3.message #{message}
+            br
+            label User
+            br
+            label Name
+            input(type="text", name="name", id="name", autocomplete="off")
+            label Password
+            input(type="password", name="password", id="password")
+            br
+            br
+            input(type="submit", class="button", value="LOGIN")

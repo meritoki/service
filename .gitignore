@@ -1,0 +1,11 @@
+node_modules
+.DS_Store
+controller/security
+controller/properties.js
+model/media
+model/relational/backup
+view/public/meritbuilders/vid
+view/public/meritbuilders/apk
+media
+security
+backup

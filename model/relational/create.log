@@ -1,0 +1,194 @@
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR at line 15: Failed to open file './model/relational/table/create/File.sql', error: 2
+--------------
+CREATE DATABASE IF NOT EXISTS management
+--------------
+
+Query OK, 1 row affected
+
+--------------
+SET foreign_key_checks = 0
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+DROP TABLE IF EXISTS `Account`
+--------------
+
+Query OK, 0 rows affected, 1 warning
+
+--------------
+SET foreign_key_checks = 1
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+CREATE TABLE `Account` (
+  `idAccount` int(11) NOT NULL AUTO_INCREMENT,
+  `guid` varchar(1024) NOT NULL,
+  `name` varchar(1024) NULL,
+  `identification` varchar(1024) NOT NULL,
+  PRIMARY KEY (`idAccount`)
+)
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+SET foreign_key_checks = 0
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+DROP TABLE IF EXISTS `User`
+--------------
+
+Query OK, 0 rows affected, 1 warning
+
+--------------
+SET foreign_key_checks = 1
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+CREATE TABLE `User` (
+    `idUser` int NOT NULL AUTO_INCREMENT,
+    `idAccount` int NOT NULL,
+    `name` varchar(64) NOT NULL,
+    `password` varchar(64) NOT NULL,
+    `registerDate` datetime NOT NULL,
+    `activityDate` datetime NOT NULL,
+    `login` int DEFAULT 1,
+    `role` varchar(64) NOT NULL,
+    PRIMARY KEY (`idUser`),
+    FOREIGN KEY (`idAccount`) REFERENCES `Account`(`idAccount`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+SET foreign_key_checks = 0
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+SET foreign_key_checks = 0
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+DROP TABLE IF EXISTS `Client`
+--------------
+
+Query OK, 0 rows affected, 1 warning
+
+--------------
+SET foreign_key_checks = 1
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+CREATE TABLE `Client` (
+    `idClient` int NOT NULL AUTO_INCREMENT,
+    `idAccount` int NOT NULL,
+    `identification` varchar(1024) NOT NULL,
+    `name` varchar(64) NOT NULL,
+    `secret` varchar(64) NOT NULL,
+    `registerDate` datetime NOT NULL,
+    `activityDate` datetime NOT NULL,
+    `login` int DEFAULT 1,
+    PRIMARY KEY (`idClient`),
+    FOREIGN KEY (`idAccount`) REFERENCES `Account`(`idAccount`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+SET foreign_key_checks = 0
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+SET foreign_key_checks = 0
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+DROP TABLE IF EXISTS `Code`
+--------------
+
+Query OK, 0 rows affected, 1 warning
+
+--------------
+SET foreign_key_checks = 1
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+CREATE TABLE `Code` (
+    `idCode` int NOT NULL AUTO_INCREMENT,
+    `idAccount` int NOT NULL,
+    `redirectURI` VARCHAR(1024) DEFAULT NULL,
+    `value` VARCHAR(1024) DEFAULT NULL,
+    `idUser` int NOT NULL,
+    `idClient` int NOT NULL,
+    PRIMARY KEY (`idCode`),
+    FOREIGN KEY (`idAccount`) REFERENCES `Account`(`idAccount`),
+    FOREIGN KEY (`idUser`) REFERENCES `User`(`idUser`),
+    FOREIGN KEY (`idClient`) REFERENCES `Client`(`idClient`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+SET foreign_key_checks = 0
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+SET foreign_key_checks = 0
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+DROP TABLE IF EXISTS `Email`
+--------------
+
+Query OK, 0 rows affected, 1 warning
+
+--------------
+SET foreign_key_checks = 1
+--------------
+
+Query OK, 0 rows affected
+
+--------------
+CREATE TABLE `Email` (
+    `idEmail` int NOT NULL AUTO_INCREMENT,
+    `address` varchar(32) DEFAULT NULL,
+    `idUser` int NOT NULL,
+    `idAccount` int NOT NULL,
+    PRIMARY KEY (`idEmail`),
+    FOREIGN KEY (`idUser`) REFERENCES `User`(`idUser`),
+        FOREIGN KEY (`idAccount`) REFERENCES `Account`(`idAccount`)
+)
+--------------
+
+Query OK, 0 rows affected
+
+Bye

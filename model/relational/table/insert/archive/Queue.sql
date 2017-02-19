@@ -1,0 +1,1 @@
+INSERT INTO `Queue` (`idQueue`,`idAccount`,`name`,`createDate`) VALUES (1,1,"Automatic Question And Answer Queue", NOW());

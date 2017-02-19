@@ -1,0 +1,1 @@
+select idContractor, i.name from Contractor e INNER JOIN User u ON u.idUser=e.idUser INNER JOIN Identification i ON i.idUser=e.idUser;

@@ -1,0 +1,2 @@
+select i.name,p.label From management.Proc p INNER JOIN management.UserProcedure up ON up.idProcedure=p.idProcedure INNER JOIN management.Identification i ON i.idUser=up.idUser where up.owner=0 AND i.firstName LIKE CONCAT('%', p.label, '%') order by p.label,i.name;
+select i.name,p.label From management.Proc p INNER JOIN management.UserProcedure up ON up.idProcedure=p.idProcedure INNER JOIN management.Identification i ON i.idUser=up.idUser where up.owner=1 AND p.label NOT LIKE CONCAT('%', i.firstName, '%') order by p.label,i.name;

@@ -1,0 +1,1 @@
+INSERT INTO `Resource` (`idResource`,`idAccount`,`idOrganization`,`name`) VALUES (1,1,2,'Telehandler Operator Training Program');

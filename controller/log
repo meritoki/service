@@ -1,0 +1,10 @@
+20160129
+* interface - JS files untouched from 0.37.0
+Added a, app, and service.
+app contains URL paths for the Web App
+service contains URL paths for the Web Service
+
+* a - contains newest versions of the interface 0.38
+
+
+* app -

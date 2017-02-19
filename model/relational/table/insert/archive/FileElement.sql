@@ -1,0 +1,1 @@
+INSERT INTO `FileElement` (`idElement`,`addDate`,`idFile`) VALUES (1,'2015-07-01 00:00:00',1);
