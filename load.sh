@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 . "$(dirname $0)/vars.sh"
 [ $# -lt 4 ] && echo "Usage: $(basename $0) <HOST> <DATABASE> <USER> <PASSWORD> <NAME> <PATH> [<TABLE> ... <TABLE>]" && exit 1
 HOST=$1

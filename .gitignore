@@ -1,5 +1,6 @@
 node_modules
 .DS_Store
+archive
 controller/security
 controller/properties.js
 model/media

@@ -4,25 +4,12 @@
  * Date: 201506
  * Copyright: 2015 Merit Builders, Inc.All Rights Reserved
  */
-// var database = require('./database.js');
+var database = require('./database.js');
 var sql = require('./relational/sql.js');
 var bcrypt = require('bcryptjs');
-// var building = require('./object/building.js');
 var client = require('./object/client.js');
-// var instruction = require('./object/instruction.js');
-// var contractor = require('./object/contractor.js');
-// var element = require('./object/element.js');
-// var employee = require('./object/employee.js');
-// var file = require('./object/file.js');
 var identification = require('./object/identification.js');
-// var level = require('./object/level.js');
-// var project = require('./object/project.js');
-// var procedure = require('./object/procedure.js');
 var phone = require('./object/phone.js');
-// var queue = require('./object/queue.js');
-// var record = require('./object/record.js');
-// var signature = require('./object/signature.js');
-// var statistic = require('./object/statistic.js');
 var user = require('./object/user.js');
 var token = require('./object/token.js');
 var code = require('./object/code.js');
@@ -986,6 +973,8 @@ exports.getNameUser = function(name, callback) {
         u.email = result[0].email;
         u.role = result[0].role;
         u.password = result[0].password;
+      } else {
+        return callback(new Error("user is null"), null);
       }
       return callback(err, u);
     });
@@ -1716,7 +1705,8 @@ exports.getNamePasswordUser = function(name, password, callback) {
   console.log("relational.getNamePasswordUser")
   this.getNameUser(name, function(err, user) {
     if (err) {
-      return callback(err, null);
+      //return callback(err, null);
+      return callback(null,null);
     } else {
       bcrypt.compare(password, user.password, function(err, result) {
         if (err) {

@@ -1,11 +1,11 @@
 #!/bin/sh
-ORGANIZATION=meritoki
+ORGANIZATION=genocan
 NAME=web
 VERSION="0.1"
 TAG="v$VERSION"
 DATE_TIME=$(date +"%Y%m%d%H")
 ID=$DATE_TIME
-ROOT=/var/www/meritbuilders/
+ROOT=/var/www/$ORGANIZATION/
 APP=$NAME
 LINK="${ROOT}${APP}"
 USER="root"

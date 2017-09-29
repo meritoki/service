@@ -1,7 +1,7 @@
 var bcrypt = require('bcryptjs');
-var relational = require('../model/relational.js');
+var relational = require('../../model/relational.js');
 
-bcrypt.hash('iasMerit@22001155#', 10, function (err, passwordhash) {
+bcrypt.hash('123', 10, function (err, passwordhash) {
     if (err) throw err;
     console.log(passwordhash);
 });

@@ -4,10 +4,7 @@ var properties = require('../../properties.js');
 var public = require('../public.js');
 var oauth2 = require('../oauth2.js');
 var user = require('../user.js');
-// var employee = require('../employee.js');
-// var contractor = require('../contractor.js');
 var phone = require('../phone.js');
-// var file = require('../file.js');
 
 
 exports.delete = function(router) {
@@ -117,11 +114,6 @@ exports.get = function(router, passport) {
 exports.post = function(router, passport) {
   console.log('app.path.post()');
   // router.post('/user/:idUser/file', connectEnsureLogin.ensureLoggedIn(), file.postIndex);
-  // router.post("/employee/:idEmployee/procedure/:idProcedure", connectEnsureLogin.ensureLoggedIn(), employee.postProcedure); //* adds procedure to employee list of procedures for potential completion, used by employees
-  // router.post("/employee/:idEmployee/project/:idProject", connectEnsureLogin.ensureLoggedIn(), employee.postProject); //* adds project to employee list of projects for potential locality, used by employee
-  // router.post("/employee/:idEmployee/project/:idProject/procedure/:idProcedure", connectEnsureLogin.ensureLoggedIn(), employee.postProjectProcedure);
-  // router.post("/employee/:idEmployee/properties", connectEnsureLogin.ensureLoggedIn(), employee.postProperties);
-  // router.post("/employee/:idEmployee/training", connectEnsureLogin.ensureLoggedIn(), employee.postTraining);
   router.post("/login", public.postLogin);
   // router.post("/procedure/:idProcedure", connectEnsureLogin.ensureLoggedIn(), user.postProcedure);
   // router.post("/procedure/:idProcedure/instruction/:idInstruction", connectEnsureLogin.ensureLoggedIn(), user.postProcedureInstruction);

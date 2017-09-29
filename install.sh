@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 . "$(dirname $0)/vars.sh"
 command -v node >/dev/null 2>&1 || { echo >&2 "Require Node.  Aborting."; exit 1; }
 EXIT=false
@@ -17,9 +17,10 @@ else
 sudo rm -r $LINK
 sudo ln -s $INSTALL $LINK
 fi
-sudo stop $PROGRAM
+# sudo systemctl stop $PROGRAM
 case "$1" in
     create)
+        echo create
         ./load.sh $HOST $DATABASE $USER $PASSWORD create $LOAD_PATH
         ;;
     drop)
@@ -80,16 +81,13 @@ case "$1" in
             fi
         fi
         ;;
-      beta)
-        sudo cp ./controller/configuration/web.conf /etc/init/
-        sudo initctl reload-configuration
-        sudo start web
-        COUNT=16
-        tail -n $COUNT -f /var/log/meritbuilders/management/web.console
-        exit 1;
-        ;;
 esac
-sudo cp ./controller/configuration/$PROGRAM.conf /etc/init/
-sudo initctl reload-configuration
-sudo start $PROGRAM
-./log.sh
+sudo node ./index.js
+# sudo cp ./controller/configuration/$PROGRAM.conf /etc/init/
+# sudo initctl reload-configuration
+# sudo start $PROGRAM
+# sudo cp ./controller/configuration/$PROGRAM.service /etc/systemd/system
+# sudo systemctl start $PROGRAM.service
+# sudo systemctl reload-daemon $PROGRAM.service
+# sudo systemctl status $PROGRAM.service
+#./log.sh

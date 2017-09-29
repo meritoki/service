@@ -36,8 +36,8 @@ var connectEnsureLogin = require('connect-ensure-login');
 //   servicePath = require('./interface/service/a/path.js');
 // }
 
-console.log("Merit Builder Management System");
-console.log("Version 0.38.0");
+console.log("Web");
+console.log("Version 0.1.0");
 security.log(web);
 web.set('views', view);
 web.set('view engine', 'jade');

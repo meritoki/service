@@ -18,60 +18,9 @@ var getMenu = function(role) {
   if (role.indexOf(",") > -1) {
     m = getMenu(role.split(",")[0]);
   } else {
-    if (('general-manager').indexOf(role) > -1) {
+    if (('administrator').indexOf(role) > -1) {
       m = {
         'ACCOUNT': '/account',
-        'PROJECTS': '/project',
-        'EMPLOYEES': '/employee',
-        'PROCEDURES': '/procedure',
-        'ELEMENTS': '/element',
-        'TRAINING': '/training',
-        'RESOURCE': '/resource',
-        'RECORD': '/record',
-        'FILES': '/file',
-        'LOGOUT': '/logout'
-      }
-    } else if (('quality-manager,training-manager,safety-manager').indexOf(role) > -1) {
-      m = {
-        'ACCOUNT': '/account',
-        'PROJECTS': '/project',
-        'EMPLOYEES': '/employee',
-        'PROCEDURES': '/procedure',
-        'ELEMENTS': '/element',
-        'TRAINING': '/training',
-        'RESOURCE': '/resource',
-        'FILES': '/file',
-        'LOGOUT': '/logout'
-      }
-    } else if (role === 'supervisor') {
-      m = {
-        'HOME': '/account',
-        'PROJECTS': '/project',
-        'EMPLOYEES': '/employee',
-        'PROCEDURES': '/procedure',
-        'ELEMENTS': '/element',
-        'TRAINING': '/training',
-        'RESOURCE': '/resource',
-        'FILES': '/file',
-        'LOGOUT': '/logout'
-      }
-    } else if (role === 'worker') {
-      m = {
-        'ACCOUNT': '/account',
-        'ELEMENTS': '/element',
-        'TRAINING': '/training',
-        'RESOURCE': '/resource',
-        'FILES': '/file',
-        'LOGOUT': '/logout'
-      }
-    } else if (role === 'assessor') {
-      m = {
-        'ACCOUNT': '/account',
-        'EMPLOYEES': '/employee',
-        'PROJECTS': '/project',
-        'TRAINING': '/training',
-        'RESOURCE': '/resource',
-        'FILES': '/file',
         'LOGOUT': '/logout'
       }
     } else {
@@ -411,41 +360,29 @@ exports.getAccount = function(req, res, next) {
   var idUser = user.idUser;
   var role = user.role;
   var menu = getMenu(role);
-  if (isAuthorized(role, "general-manager,training-manager,safety-manager,quality-manager,supervisor,worker")) {
-    relational.getUserEmployee(idUser, function(error, employee) {
-      if (error) throw error;
-      relational.getUserFileProfileImage(idUser, function(error, file) {
-        fs.readFile('./model' + file.path + file.name + '.' + file.extension, function(error, image) {
-          if (error) {
-            res.render('account', {
-              title: 'EMPLOYEE ACCOUNT',
-              employee: employee,
-              menu: menu,
-              user: user
-            });
-          } else {
-            var base64Image = image.toString('base64');
-            res.render('account', {
-              title: 'EMPLOYEE ACCOUNT',
-              employee: employee,
-              image: base64Image,
-              menu: menu,
-              user: user
-            });
-          }
-        });
-      });
-    });
-  } else if (isAuthorized(role, "assessor")) {
-    relational.getUserContractor(idUser, function(error, contractor) {
-      if (error) throw error;
+  if (isAuthorized(role, "administrator")) {
+      // relational.getUserFileProfileImage(idUser, function(error, file) {
+        // fs.readFile('./model' + file.path + file.name + '.' + file.extension, function(error, image) {
+          // if (error) {
+
+          // } else {
+          //   var base64Image = image.toString('base64');
+          //   res.render('account', {
+          //     title: 'EMPLOYEE ACCOUNT',
+          //     employee: employee,
+          //     image: base64Image,
+          //     menu: menu,
+          //     user: user
+          //   });
+          // }
+        // });
+      // });
       res.render('account', {
-        title: 'Contractor Account',
-        contractor: contractor,
+        title: 'EMPLOYEE ACCOUNT',
+        // employee: employee,
         menu: menu,
         user: user
       });
-    });
   }
 };
 
