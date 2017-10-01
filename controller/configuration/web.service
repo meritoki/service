@@ -1,7 +1,0 @@
-[Unit]
-Description=Prospero
-
-[Service]
-WorkingDirectory=/var/www/meritoki/web
-ExecStart=sudo /usr/local/bin/node index.js
-Type=simple
