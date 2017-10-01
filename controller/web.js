@@ -7,6 +7,7 @@
  * Reference: https://www.codementor.io/nodejs/tutorial/build-website-from-scratch-using-expressjs-and-bootstrap
  * Reference: http://stackoverflow.com/questions/21194934/node-how-to-create-a-directory-if-doesnt-exist
  * Reference: http://passportjs.org/docs
+ * Reference: http://stackoverflow.com/questions/27961320/when-should-i-use-cookie-parser-with-express-session
  */
 var express = require('express');
 var oauth2orize = require('oauth2orize');
@@ -31,10 +32,6 @@ var passport = require('passport');
 var oauth2orize = require('oauth2orize');
 var oauth2orizeServer = oauth2orize.createServer();
 var connectEnsureLogin = require('connect-ensure-login');
-// if(properties.feature.switch){
-//   appPath = require('./interface/app/path.js');
-//   servicePath = require('./interface/service/a/path.js');
-// }
 
 console.log("Web");
 console.log("Version 0.1.0");
@@ -50,7 +47,7 @@ web.use(bodyParser.urlencoded({
   extended: false,
   limit: '50mb'
 }));
-// web.use(cookieParser(properties.cookie.secret));http://stackoverflow.com/questions/27961320/when-should-i-use-cookie-parser-with-express-session
+// web.use(cookieParser(properties.cookie.secret));
 web.use(session({
   resave: true,
   saveUninitialized: true,
