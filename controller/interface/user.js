@@ -7,6 +7,7 @@ var relational = require('../../model/relational.js');
 var properties = require('../properties.js');
 var fs = require('fs');
 var path = require('path');
+var bcrypt = require('bcryptjs');
 
 var getMenu = function(role) {
   var m = {};
@@ -20,7 +21,7 @@ var getMenu = function(role) {
       }
     } else {
       m = {
-        'ACCOUNT': '/account',
+        'HOME': '/account',
         'LOGIN': '/login'
       }
     }
@@ -40,6 +41,30 @@ var getURL = function() {
   return url;
 };
 
+
+
+exports.deleteProcedure = function(req, res, next) {
+  console.log('deleteProcedure');
+  //    var user = req.user;
+  //    var role = user.role;
+  var idProcedure = req.params.idProcedure;
+  //    if (isAuthorized(role, "general-manager")) {
+  relational.getProcedure(idProcedure, function(error, p) {
+    if (error) {
+      res.end('{"status":500}');
+
+    } else {
+      if (p !== null) {
+        relational.removeProcedure(idProcedure, function(error, result) {
+          res.end('{"status":200,"idProcedure":' + idProcedure + '}');
+        });
+      } else {
+        res.end('{"status":500,"idProcedure":' + idProcedure + '}');
+      }
+    }
+  });
+};
+
 exports.getAccount = function(req, res, next) {
   console.log("user.getAccount");
   var user = req.user;
@@ -55,12 +80,23 @@ exports.getAccount = function(req, res, next) {
   }
 };
 
+exports.getNotAuthorized = function(req, res, next) {
+  var user = req.user;
+  var role = user.role;
+  var menu = getMenu(role);
+  res.render('account/not-authorized', {
+    title: 'NOT AUTHORIZED',
+    menu: menu
+  });
+};
+
 
 /*
  * Function recusrively searches roles string with comma delimited role names, for a match to the role name contained in the role string. If a role string match is found, functions
  * returns true, else false.
  */
 function isAuthorized(role, roles) {
+  //    console.log('isAuthorized ' + role + ' ' + roles);
   var authorization = false;
   if (typeof role !== "undefined") {
     if (role.indexOf(",") > -1) {

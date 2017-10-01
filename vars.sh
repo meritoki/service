@@ -1,5 +1,5 @@
 #!/bin/sh
-ORGANIZATION=genocan
+ORGANIZATION=organization
 NAME=web
 VERSION="0.1"
 TAG="v$VERSION"

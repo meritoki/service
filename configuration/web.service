@@ -1,6 +1,6 @@
 [Service]
 Type=simple
-ExecStart=/usr/local/bin/node /var/www/web/index.js
+ExecStart=/usr/local/bin/node /var/www/organization/web/index.js
 Restart=on-failure
 
 [Install]

@@ -82,10 +82,9 @@ case "$1" in
         fi
         ;;
 esac
-sudo mkdir -p /var/log/$PROGRAM
-sudo touch /var/log/$PROGRAM/app.express
-sudo rm /var/www/web
-sudo ln -s $(pwd)/ /var/www/web
+
+# sudo rm /var/www/web
+# sudo ln -s $(pwd)/ /var/www/web
 sudo systemctl disable $PROGRAM
 sudo systemctl daemon-reload
 sudo systemctl reset-failed
