@@ -1,6 +1,5 @@
 var properties = require('../properties.js');
 var twilio = require('twilio');
-var menu = require('./menu.js');
 var user = require('./user.js');
 // var client = new twilio.RestClient('AC58bc2c0137b2aac23b805fc25e642495', 'e6e70d30ee1f8761597dcd594501206f');
 var client = new twilio.RestClient('AC3bc642a06bdd2fe29860533605629696', '9e7e573393f4dba697de92a73d59651f');
@@ -74,7 +73,6 @@ exports.getIndex = function(req,res,next){
   if (user.isAuthorized(userRole, "general-manager,training-manager,safety-manager,quality-manager")) {
     res.render('account/phone', {
       title: 'PHONE',
-      menu: menu.getUser(userIDUser,userRole)
     });
   }
 }

@@ -1,8 +1,6 @@
 /**
  * Name: oauth2.js
  * Date: 2015-07-08
- * Author: Jared Hansen
- * Editor: Joaquin Osvaldo Rodriguez
  */
 var oauth2orize = require('oauth2orize'),
   passport = require('passport'),

@@ -9,3 +9,5 @@ model/relational/backup
 media
 security
 backup
+view/public/archive
+

@@ -2,7 +2,6 @@
  * Name: authentication.js
  * Author: Joaquin Rodriguez
  * Date: 201511
- * Copyright: 2015 Merit Builders, Inc. All Rights Reserved
  */
 var passport = require('passport');
 var passportLocal = require('passport-local');
@@ -16,7 +15,7 @@ var passportHTTPBearerStrategy = passportHTTPBearer.Strategy;
 var relational = require('../../model/relational.js');
 
 passport.use('local', new passportLocalStrategy({
-        usernameField: 'name',
+        usernameField: 'username',
         passwordField: 'password',
         session: false
     },
@@ -27,20 +26,6 @@ passport.use('local', new passportLocalStrategy({
         });
     }
 ));
-
-
-// passport.use('localHash', new passportLocalStrategy({
-//         usernameField: 'name',
-//         passwordField: 'password',
-//         session: false
-//     },
-//     function (name, password, done) {
-//         console.log('authentication.passportLocalStrategy');
-//         relational.getNamePasswordHashUser(name, password, function (err, u) {
-//             return done(err, u);
-//         });
-//     }
-// ));
 
 passport.serializeUser(function (user, done) {
     console.log('authentication.serializeUser');

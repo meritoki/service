@@ -2,7 +2,6 @@
  * Name: public.js
  * Author: Joaquin Rodriguez
  * Date: 201511
- * Copyright: 2015 Merit Builders, Inc. All Rights Reserved
  */
 var properties = require('../properties.js');
 var passport = require('passport');
@@ -154,12 +153,9 @@ exports.postLogin = passport.authenticate('local', {
   failureRedirect: '/login/failure'
 });
 
-// exports.postHashLogin = passport.authenticate('localHash', {
-//   successRedirect: '/account',
-//   failureRedirect: '/hash/login/failure'
-// });
 
 exports.postAPILogin = passport.authenticate('local', {
+  // successReturnToOrRedirect: '/',
   successReturnToOrRedirect: '/',
   failureRedirect: '/api/login/failure'
 });

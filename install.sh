@@ -17,7 +17,6 @@ else
 sudo rm -r $LINK
 sudo ln -s $INSTALL $LINK
 fi
-sudo systemctl stop $PROGRAM
 case "$1" in
     create)
         echo create
@@ -80,19 +79,20 @@ case "$1" in
                     ./load.sh $HOST $DATABASE $USER $PASSWORD $NAME $BACKUP_PATH $TABLE
             fi
         fi
-        ;;
-esac
+    ;;
 
-# sudo rm /var/www/web
-# sudo ln -s $(pwd)/ /var/www/web
-sudo systemctl disable $PROGRAM
-sudo systemctl daemon-reload
-sudo systemctl reset-failed
-sudo rm /lib/systemd/system/$PROGRAM.service
-sudo cp ./configuration/$PROGRAM.service /lib/systemd/system/
-sudo systemctl daemon-reload
-sudo systemctl start $PROGRAM
-sudo systemctl status $PROGRAM
-sudo iptables -t nat -I PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 8080
-sudo iptables -t nat -I PREROUTING -p tcp --dport 443 -j REDIRECT --to-port 8443
-./log.sh
+    service)
+      sudo systemctl stop $PROGRAM
+      sudo systemctl disable $PROGRAM
+      sudo systemctl daemon-reload
+      sudo systemctl reset-failed
+      sudo rm /lib/systemd/system/$PROGRAM.service
+      sudo cp ./controller/configuration/$PROGRAM.service /lib/systemd/system/
+      sudo systemctl daemon-reload
+      sudo systemctl start $PROGRAM
+      sudo systemctl status $PROGRAM
+      sudo iptables -t nat -I PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 8080
+      sudo iptables -t nat -I PREROUTING -p tcp --dport 443 -j REDIRECT --to-port 8443
+    ;;
+esac
+#./log.sh

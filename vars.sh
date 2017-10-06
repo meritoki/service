@@ -1,6 +1,7 @@
 #!/bin/sh
 ORGANIZATION=organization
 NAME=web
+PROGRAM=$NAME
 VERSION="0.1"
 TAG="v$VERSION"
 DATE_TIME=$(date +"%Y%m%d%H")
@@ -17,7 +18,6 @@ LOAD_PATH="model/relational"
 COMPILE_PATH="model/"
 INSTALL=$(pwd)
 LOG_PATH="/var/log/$ORGANIZATION/$NAME/"
-#util
 TAR=$(which tar)
 GUNZIP=$(which gunzip)
 MYSQL=$(which mysql)
