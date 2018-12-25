@@ -21,4 +21,10 @@ exports.post = function(router, passport) {
   router.post('/api/dialog/authorize/decision', oauth2.decision);
   router.post('/api/oauth/token', oauth2.token);
   router.post("/api/login", public.postAPILogin);
+
+  // router.post("/v1/auth/name/password",connectEnsureLogin.ensureLoggedIn(),)
+
+  router.post("/v1/user/id",connectEnsureLogin.ensureLoggedIn(),  user.postIDUser);
+
+  // connectEnsureLogin.ensureLoggedIn(),
 };
