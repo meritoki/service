@@ -20,7 +20,6 @@
     "express": "^4.12.4",
     "express-session": "~1.11.3",
     "fs": "0.0.2",
-    "jade": "~1.10.0",
     "jsdom": "^7.0.2",
     "method-override": "^2.3.7",
     "mkdirp": "~0.5.1",
