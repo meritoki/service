@@ -20,33 +20,6 @@ var getMenu = function(role) {
   return m;
 };
 
-//GET
-exports.getLogin = function(req, res) {
-  var user = req.user;
-  if (user !== undefined) {
-    var role = user.role;
-    menu = getMenu(role);
-  }
-  res.render('public/login', {
-    menu: menu,
-    action: '/login',
-    title: 'LOGIN'
-  })
-}
-
-exports.getHashLogin = function(req, res) {
-  var user = req.user;
-  if (user !== undefined) {
-    var role = user.role;
-    menu = getMenu(role);
-  }
-  res.render('public/login', {
-    menu: menu,
-    action: '/hash/login',
-    title: 'LOGIN'
-  })
-}
-
 exports.getAPILogin = function(req, res) {
   var user = req.user;
   if (user !== undefined) {
@@ -58,20 +31,6 @@ exports.getAPILogin = function(req, res) {
     action: '/api/login',
     title: 'LOGIN'
   })
-}
-
-exports.getLoginFailure = function(req, res) {
-  var user = req.user;
-  if (user !== undefined) {
-    var role = user.role;
-    menu = getMenu(role);
-  }
-  res.render('public/login', {
-    title: 'LOGIN FAILURE',
-    action: '/login',
-    menu: menu,
-    message: 'Please check your username or password and try again'
-  });
 }
 
 exports.getAPILoginFailure = function(req, res) {
@@ -88,38 +47,6 @@ exports.getAPILoginFailure = function(req, res) {
   });
 }
 
-exports.getLoginFailure = function(req, res) {
-  var user = req.user;
-  if (user !== undefined) {
-    var role = user.role;
-    menu = getMenu(role);
-  }
-  res.render('public/login', {
-    title: 'LOGIN FAILURE',
-    action: '/login',
-    menu: menu,
-    message: 'Please check your username or password and try again'
-  });
-}
-
-exports.getIndex = function(req, res) {
-  var user = req.user;
-  if (user !== undefined) {
-    var role = user.role;
-    menu = getMenu(role);
-  }
-  if (properties.maintenance.switch) {
-    res.render('public/maintenance', {
-      title: 'MAINTENANCE',
-      date: properties.maintenance.date
-    });
-  } else {
-    res.render('index', {
-      title: 'HOME',
-      menu: menu
-    });
-  }
-}
 
 
 //POST
@@ -133,14 +60,9 @@ exports.getLogout = function(req, res) {
   res.redirect('/');
 }
 
-exports.postLogin = passport.authenticate('local', {
-  successRedirect: '/account',
-  failureRedirect: '/login/failure'
-});
-
 
 exports.postAPILogin = passport.authenticate('local', {
   // successReturnToOrRedirect: '/',
-  // successReturnToOrRedirect: '/',
+  successReturnToOrRedirect: '/',
   failureRedirect: '/api/login/failure'
 });
