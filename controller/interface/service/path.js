@@ -3,6 +3,7 @@ var properties = require('../../properties.js');
 var public = require('../public.js');
 var oauth2 = require('../oauth2.js');
 var user = require('../user.js');
+var auth = require('../auth.js');
 
 exports.delete = function(router) {
   console.log('service.path.delete()');
@@ -22,7 +23,9 @@ exports.post = function(router, passport) {
   router.post('/api/oauth/token', oauth2.token);
   router.post("/api/login", public.postAPILogin);
 
-  // router.post("/v1/auth/name/password",connectEnsureLogin.ensureLoggedIn(),)
+  router.post("/v1/auth/name/password",connectEnsureLogin.ensureLoggedIn(), auth.postNamePasswordAuth);
+  router.post("/v1/auth/name",connectEnsureLogin.ensureLoggedIn(), auth.postNameAuth);
+  router.post("/v1/auth/id",connectEnsureLogin.ensureLoggedIn(), auth.postIDAuth);
 
   router.post("/v1/user/id",connectEnsureLogin.ensureLoggedIn(),  user.postIDUser);
 
