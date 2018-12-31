@@ -19,3 +19,19 @@
       });
       // res.end("hello world");
   }
+
+  exports.postUser= function(req, res, next) {
+      Request.post({
+        "headers": { "content-type": "application/json" },
+        "url": "http://localhost:3002/v1/user",
+        "body": JSON.stringify(req.body)
+      }, (error, response, body) => {
+        if (error) {
+          console.log(error);
+          var status = 500;
+          res.status(status).end(http.STATUS_CODES[status]);
+        } else {
+          res.end(JSON.stringify(body));
+        }
+      });
+    }

@@ -5,6 +5,8 @@ var oauth2 = require('../oauth2.js');
 var user = require('../user.js');
 var auth = require('../auth.js');
 var msg = require('../msg.js');
+var id = require('../id.js');
+var location = require('../location.js');
 
 exports.delete = function(router) {
   console.log('service.path.delete()');
@@ -32,11 +34,15 @@ exports.post = function(router, passport) {
   router.post("/v1/auth/id",connectEnsureLogin.ensureLoggedIn(), auth.postIDAuth);
 //user
   router.post("/v1/user/id",connectEnsureLogin.ensureLoggedIn(),  user.postIDUser);
+  router.post("/v1/user",connectEnsureLogin.ensureLoggedIn(),  user.postUser);
 //msg
   router.post("/v1/msg/email/verification",msg.postEmailVerification);
 //id
-
+  router.post("/v1/id/id",id.postIDID);
+  router.post("/v1/id",id.postID);
 //location
+  router.post("/v1/location/id",location.postIDLocation);
+  router.post("/v1/location",location.postLocation);
 
   // connectEnsureLogin.ensureLoggedIn(),
 };
