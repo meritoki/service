@@ -3,7 +3,6 @@ node_modules
 archive
 controller/archive
 controller/security
-controller/properties.js
 model/media
 model/relational/backup
 media
