@@ -14,7 +14,7 @@
     "bcryptjs": "~2.1.0",
     "body-parser": "^1.12.4",
     "connect-ensure-login": "^0.1.1",
-    "connect-redis": "^3.0.1",
+    "connect-redis": "3.4.0",
     "cookie-parser": "~1.3.5",
     "ejs": "^2.3.4",
     "express": "^4.12.4",
@@ -25,7 +25,7 @@
     "mkdirp": "~0.5.1",
     "morgan": "^1.5.3",
     "multer": "^1.1.0",
-    "mysql": "~2.7.0",
+    "mysql": "2.16.0",
     "oauth2orize": "^1.1.1",
     "passport": "0.2.2",
     "passport-http": "0.3.0",
@@ -33,9 +33,8 @@
     "passport-local": "1.0.0",
     "passport-oauth2-client-password": "^0.1.2",
     "jade": "*",
-    "request":"*",
+    "request": "*",
     "redis": "^0.12.1",
-    "connect-redis": "^2.3.0",
     "async": "^1.2.1"
   }
 }
